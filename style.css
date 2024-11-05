@@ -1,0 +1,166 @@
+/* css dùng chung */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divider{
+    width: 80vw;
+    border-top: 1px solid #EDD29F;margin: auto;
+    margin-bottom: 16px;
+
+}
+
+.gif{
+    width: 100vw;
+
+}
+
+.gif img{
+    width: 100%;
+}
+
+/*  */
+.main{
+    background-color: #FEF8EC;
+    /* height: 3000px; */
+
+    font-family: "Playwrite TZ", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.img-save-date{
+    width: 100%;
+}
+
+.save-date{
+    padding-bottom: 30px;
+}
+
+.about-me-title{
+    font-family: "Playwrite TZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.list-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.item-info{
+    flex: 1;
+    border: 1px none #EDD29F;
+    border-radius: 50%;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.item-info img{
+    width: 90%;
+    height: auto;
+    border: 1px none #EDD29F;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+
+.item-info img:hover{
+    display: inline-block;
+    animation: wiggle 0.5s ease-in-out infinite; /* thời gian và độ lặp */
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 60% {
+      transform: translateX(-5px);
+    }
+    40%, 80% {
+      transform: translateX(5px);
+    }
+  }
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+  }
+
+.desc-info{
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.info-family{
+    font-size: 14px;
+}
+
+.info-family strong{
+    margin-bottom: 16px;
+}
+
+.house{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+/* 
+.row>* {
+    padding-left: unset;
+} */
+
+.rowz{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4px 24px;
+    
+}
+
+.location p{
+    margin:  6px 0;
+    font-weight: 600;
+}
+
+.album-wedding{
+    margin: 10px 12px;
+    border: #EDD29F 1px none;
+    border-radius: 16px;
+}
+
+.carousel .slide img{
+    border: #EDD29F 1px none !important;
+    border-radius: 16px !important;
+}
+
+
+.modal-dialog-centered {
+    min-height: unset;
+}
+
+.modal-custom{
+    font-family: "Playwrite TZ", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+@media (min-width: 1025px) {
+    .main {
+        display: none;
+    }
+}
